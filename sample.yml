@@ -1,0 +1,6 @@
+name: msty API invoke Workflow
+on:
+  # "repository_dispatch" is external-api; "workflow_dispatch" is for User-UI triggering
+  repository_dispatch:
+    types:
+      - run-msty-on-repo-target
